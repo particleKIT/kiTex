@@ -1,0 +1,2 @@
+tex/** -text -diff
+getnonfreefonts-sys -text -diff
