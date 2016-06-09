@@ -2,7 +2,7 @@ FROM opensuse:leap
 
 
 RUN zypper --non-interactive in --auto-agree-with-licenses --no-recommends \ 
-              unzip texlive-collection-bibtexextra texlive-collection-latexextra \
+              make unzip texlive-collection-bibtexextra texlive-collection-latexextra \
               texlive-collection-pstricks texlive-collection-publishers \
               texlive-collection-science texlive-inconsolata texlive-metapost \
               texlive-tools texlive-sourcesanspro texlive-newtx texlive-libertine \
