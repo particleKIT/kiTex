@@ -16,6 +16,10 @@ RUN zypper --non-interactive in --auto-agree-with-licenses --no-recommends \
               texlive-collection-metapost \
               texlive-collection-pstricks \
               texlive-collection-publishers \
+              texlive-collection-mathscience \
+              texlive-luatex \
+              texlive-luatextra \
+              texlive-plain \
               texlive-collection-xetex \
               texlive-inconsolata \
               texlive-metapost \
