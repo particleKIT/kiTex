@@ -2,14 +2,29 @@ FROM opensuse/leap:15.0
 
 
 RUN zypper --non-interactive in --auto-agree-with-licenses --no-recommends \ 
-              make unzip texlive-collection-bibtexextra texlive-collection-latexextra \
-              texlive-collection-pstricks texlive-collection-publishers \
-              texlive-collection-science texlive-inconsolata texlive-metapost \
-              texlive-tools texlive-sourcesanspro texlive-newtx texlive-libertine \
-              linux-libertine-fonts texlive-boondox fetchmsttfonts patterns-openSUSE-fonts \
-              texlive-babel-german texlive-bbm texlive-helvetic-fonts texlive-helvetic\
-              texlive-latexmk texlive-latexmk-bin &&\
-    zypper clean --all
+              make unzip \
+              patterns-openSUSE-technical_writing \
+              texlive-bbm \
+              texlive-collection-bibtexextra \
+              texlive-collection-binextra \
+              texlive-collection-context \
+              texlive-collection-fontsrecommended \
+              texlive-collection-fontutils \
+              texlive-collection-langeuropean \
+              texlive-collection-langgerman \
+              texlive-collection-latexextra \
+              texlive-collection-metapost \
+              texlive-collection-pstricks \
+              texlive-collection-publishers \
+              texlive-collection-xetex \
+              texlive-inconsolata \
+              texlive-metapost \
+              texlive-tools \
+              texlive-sourcesanspro \
+              texlive-newtx \
+              texlive-libertine \
+              texlive-boondox \
+              zypper clean --all
 
 ADD getnonfreefonts-sys /usr/local/bin/
 ADD tex /usr/share/texmf/tex
