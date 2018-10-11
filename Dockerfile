@@ -1,4 +1,4 @@
-FROM opensuse:leap
+FROM opensuse/leap:15.0
 
 
 RUN zypper --non-interactive in --auto-agree-with-licenses --no-recommends \ 
